@@ -625,7 +625,7 @@ if (isset($update["queryResult"]["action"]))
 					"source" => $update["responseId"],
 				"fulfillmentText"=>"Username".$var1
 			));
-	if (is_null($var1))
+	/*if (is_null($var1))
 		
 			{
 				sendMessage(array(
@@ -640,7 +640,7 @@ if (isset($update["queryResult"]["action"]))
 				"fulfillmentText"=>"اسم المستخدم موجود Telegram" 
 			));
 
-	}
+	}*/
 	
 	
    /* processMessage($update);
