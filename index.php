@@ -611,12 +611,12 @@ $var2=$update["originalDetectIntentRequest"]["payload"]["from"]["id"];
 				"fulfillmentText"=>"chatid" .$var1
 			));*/
 
-/*if (isset($update["queryResult"]["action"])) {
+if (isset($update["queryResult"]["action"])) {
 	sendMessage(array(
 							"source" => $update["responseId"],
 							"fulfillmentText"=>" yyyyy : " .$update_response
 							
-						));*/
+						));
 					
 					
 	//$var1=$update["originalDetectIntentRequest"]["payload"]["from"]["username"];		
