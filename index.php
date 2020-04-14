@@ -613,15 +613,19 @@ sendMessage(array(
 
 if (isset($update["queryResult"]["action"])) 
 {
-	sendMessage(array(
+	/*sendMessage(array(
 							"source" => $update["responseId"],
 							"fulfillmentText"=>" yyyy : " .$update_response
 							
-						));
+						));*/
 					
 					
 	$var1=$update["originalDetectIntentRequest"]["payload"]["from"]["username"];	
-	
+	sendMessage(array(
+							"source" => $update["responseId"],
+							"fulfillmentText"=>" Username : " .$var1
+							
+						));
 	/*if (is_null($var1))
 		
 			{
