@@ -626,7 +626,7 @@ if (isset($update["queryResult"]["action"]))
 			{
 				sendMessage(array(
 					"source" => $update["responseId"],
-				"fulfillmentText"=>"اسم المستخدم غير موجود في تطبيق ال Telegram" 
+				"fulfillmentText"=>"اسم المستخدم غير موجود في تطبيق ال Telegram".$update_response
 			));
 			}
 	else
