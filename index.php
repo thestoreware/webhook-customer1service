@@ -621,11 +621,6 @@ if (isset($update["queryResult"]["action"]))
 					
 					
 	$var1=$update["originalDetectIntentRequest"]["payload"]["from"]["username"];	
-	sendMessage(array(
-							"source" => $update["responseId"],
-							"fulfillmentText"=>" Username : ".$var1
-							
-						));
 	/*if (is_null($var1))
 		
 			{
@@ -644,10 +639,10 @@ if (isset($update["queryResult"]["action"]))
 	}*/
 	
 	
-   /* processMessage($update);
+   processMessage($update);
     $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
     fwrite($myfile, $update["queryResult"]["action"]);
-    fclose($myfile);*/
+    fclose($myfile);
 }else
 {
      sendMessage(array(
