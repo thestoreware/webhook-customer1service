@@ -613,15 +613,15 @@ sendMessage(array(
 
 if (isset($update["queryResult"]["action"])) 
 {
-	sendMessage(array(
+	/*sendMessage(array(
 							"source" => $update["responseId"],
 							"fulfillmentText"=>" yyyyy : " .$update_response
 							
-						));
+						));*/
 					
 					
-	//$var1=$update["originalDetectIntentRequest"]["payload"]["from"]["username"];		
-	/*if (is_null($var1))
+	$var1=$update["originalDetectIntentRequest"]["payload"]["from"]["username"];		
+	if (is_null($var1))
 		
 			{
 				sendMessage(array(
@@ -636,7 +636,7 @@ if (isset($update["queryResult"]["action"]))
 				"fulfillmentText"=>"اسم المستخدم موجود Telegram" 
 			));
 
-	}*/
+	}
 	
 	
    /* processMessage($update);
