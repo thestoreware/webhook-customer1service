@@ -601,7 +601,7 @@ $var2=$update["originalDetectIntentRequest"]["payload"]["from"]["id"];
 sendMessage(array(
 	"source" => $update["responseId"],
 	"fulfillmentText"=>"update" .$update
-));*/
+));
 /*sendMessage(array(
 	"source" => $update["responseId"],
 	"fulfillmentText"=>"username" .$var1
