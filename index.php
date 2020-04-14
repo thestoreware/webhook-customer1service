@@ -598,7 +598,7 @@ $update_response = file_get_contents("php://input");
 $update = json_decode($update_response, true);
 $var1=$update["originalDetectIntentRequest"]["payload"]["from"]["username"];
 $var2=$update["originalDetectIntentRequest"]["payload"]["from"]["id"];
-/*sendMessage(array(
+sendMessage(array(
 	"source" => $update["responseId"],
 	"fulfillmentText"=>"update" .$update
 ));*/
@@ -611,7 +611,8 @@ $var2=$update["originalDetectIntentRequest"]["payload"]["from"]["id"];
 				"fulfillmentText"=>"chatid" .$var1
 			));*/
 
-if (isset($update["queryResult"]["action"])) {
+if (isset($update["queryResult"]["action"])) 
+{
 	sendMessage(array(
 							"source" => $update["responseId"],
 							"fulfillmentText"=>" yyyyy : " .$update_response
@@ -638,10 +639,10 @@ if (isset($update["queryResult"]["action"])) {
 	}*/
 	
 	
-    processMessage($update);
+   /* processMessage($update);
     $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
     fwrite($myfile, $update["queryResult"]["action"]);
-    fclose($myfile);
+    fclose($myfile);*/
 }else{
      sendMessage(array(
             "source" => $update["responseId"],
