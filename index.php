@@ -615,7 +615,7 @@ if (isset($update["queryResult"]["action"]))
 {
 	sendMessage(array(
 							"source" => $update["responseId"],
-							"fulfillmentText"=>" yyyyy : " .$update_response
+							"fulfillmentText"=>" yyyy : " .$update_response
 							
 						));
 					
