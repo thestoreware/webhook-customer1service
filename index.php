@@ -653,7 +653,7 @@ if (isset($update["queryResult"]["action"]))
                     array(
                         "simpleResponse"=>
                     array(
-                        "textToSpeech"=>"Bad request"
+                        "textToSpeech"=>"Bad request00"
                          )
                     )
                 ],
