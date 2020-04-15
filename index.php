@@ -598,11 +598,11 @@ $update_response = file_get_contents("php://input");
 $update = json_decode($update_response, true);
 $var1=$update["originalDetectIntentRequest"]["payload"]["from"]["username"];
 $var2=$update["originalDetectIntentRequest"]["payload"]["from"]["id"];
-sendMessage(array(
+/*sendMessage(array(
 	"source" => $update["responseId"],
 	"fulfillmentText"=>"update" .$update
 ));
-/*sendMessage(array(
+sendMessage(array(
 	"source" => $update["responseId"],
 	"fulfillmentText"=>"username" .$var1
 ));
@@ -620,7 +620,7 @@ if (isset($update["queryResult"]["action"]))
 						));*/
 					
 					
-	//$var1=$update["originalDetectIntentRequest"]["payload"]["from"]["username"];	
+	$var1=$update["originalDetectIntentRequest"]["payload"]["from"]["username"];	
 	/*if (is_null($var1))
 		
 			{
@@ -639,10 +639,10 @@ if (isset($update["queryResult"]["action"]))
 	}*/
 	
 	
- /*  processMessage($update);
+   processMessage($update);
     $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
     fwrite($myfile, $update["queryResult"]["action"]);
-    fclose($myfile);*/
+    fclose($myfile);
 }else
 {
      sendMessage(array(
