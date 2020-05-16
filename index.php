@@ -27,7 +27,7 @@ function processMessage($update) {
 	{
 	//===================================================================================================================================================================================================================================
 		//connect to the cloudhost
-		$conn_string = "ec2-18-233-32-61.compute-1.amazonaws.com port=5432 dbname=de360f4shrlbjd user=dcbgrevvwddcbc password=de67d2731395f66851a3e0d5806e3ef3c21034096c46fb2993b1505428b75e9a options='--client_encoding=UTF8'";
+		$conn_string = "host=ec2-18-233-32-61.compute-1.amazonaws.com port=5432 dbname=de360f4shrlbjd user=dcbgrevvwddcbc password=de67d2731395f66851a3e0d5806e3ef3c21034096c46fb2993b1505428b75e9a options='--client_encoding=UTF8'";
 	//====================================================================================================================================================================================================================================
 	
 		//connect to the localhost
