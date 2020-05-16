@@ -39,7 +39,7 @@ function processMessage($update) {
 		if (!$conn) 
 		{
 			
-				telegram('خطأ في الاتصال مع قاعدة البيانات!!');
+				telegram('خطأ في الاتصال مع قاعدة البيانات------!!');
 							
 		} 
 		else
